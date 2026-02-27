@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pawsitive Project</title>
+    <link rel="icon" type="image/jpeg" href="images/logo_small.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo_small.jpg" alt="Pawsitive Logo">
+                <span>Pawsitive</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#adopt" class="nav-link">Adopt</a>
+                <a href="#foster" class="nav-link">Foster</a>
+                <a href="#volunteer" class="nav-link">Volunteer</a>
+                <a href="#donate" class="nav-link">Donate</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==================== HOME ==================== -->
+        <section id="home" class="section">
+            <!-- Hero -->
+            <div class="hero">
+                <div class="hero-content">
+                    <img src="images/logo.jpg" alt="The Pawsitive Project" class="hero-logo">
+                    <h1>The Pawsitive Project</h1>
+                    <p class="hero-tagline">A student-led organization dedicated to<br>helping the animal shelter crisis</p>
+                    <div class="hero-paws">
+                        <span class="paw">&#128062;</span>
+                        <span class="paw">&#128062;</span>
+                        <span class="paw">&#128062;</span>
+                    </div>
+                    <a href="#adopt" class="btn btn-white">Meet Our Animals</a>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get Involved</h2>
+                </div>
+                <div class="quick-actions">
+                    <a href="#adopt" class="action-card">
+                        <div class="action-icon" style="background: linear-gradient(135deg, var(--soft-pink), var(--peach));">
+                            <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <h3>Adopt</h3>
+                        <p>Find your bestie</p>
+                    </a>
+                    <a href="#foster" class="action-card">
+                        <div class="action-icon" style="background: linear-gradient(135deg, var(--sky-blue), #5ba3d9);">
+                            <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        </div>
+                        <h3>Foster</h3>
+                        <p>Temporary love</p>
+                    </a>
+                    <a href="#volunteer" class="action-card">
+                        <div class="action-icon" style="background: linear-gradient(135deg, var(--golden), var(--warm-orange));">
+                            <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
+                        <h3>Volunteer</h3>
+                        <p>Make a difference</p>
+                    </a>
+                    <a href="#donate" class="action-card">
+                        <div class="action-icon" style="background: linear-gradient(135deg, var(--warm-orange), var(--soft-pink));">
+                            <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+                        </div>
+                        <h3>Donate</h3>
+                        <p>Every $ helps</p>
+                    </a>
+                </div>
+
+                <!-- Impact Stats -->
+                <div class="section-header">
+                    <h2>Our Impact</h2>
+                    <p class="section-subtitle">Together we make a difference</p>
+                </div>
+                <div class="impact-stats">
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="color: var(--soft-pink);">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M4.5 9.5C3.12 9.5 2 8.38 2 7c0-1.38 1.12-2.5 2.5-2.5S7 5.62 7 7c0 1.38-1.12 2.5-2.5 2.5zm0 .5c-1.38 0-2.5 1.12-2.5 2.5S3.12 15 4.5 15 7 13.88 7 12.5 5.88 10 4.5 10zm15 0c-1.38 0-2.5 1.12-2.5 2.5S18.12 15 19.5 15 22 13.88 22 12.5 20.88 10 19.5 10zm0-5.5C18.12 4.5 17 5.62 17 7c0 1.38 1.12 2.5 2.5 2.5S22 8.38 22 7c0-1.38-1.12-2.5-2.5-2.5zM12 2C10.62 2 9.5 3.12 9.5 4.5S10.62 7 12 7s2.5-1.12 2.5-2.5S13.38 2 12 2zm0 8.5c-2.03 0-4 1.07-4 3.05 0 1.61.83 3.49 2.25 5.58.67.99 1.37 1.85 1.75 2.3.38-.45 1.08-1.31 1.75-2.3C15.17 17.04 16 15.16 16 13.55c0-1.98-1.97-3.05-4-3.05z"/></svg>
+                        </div>
+                        <span class="stat-number" data-target="150">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Animals Helped</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="color: var(--sky-blue);">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                        </div>
+                        <span class="stat-number" data-target="80">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Volunteers</span>
+                    </div>
+                    <div class="stat-card fade-in">
+                        <div class="stat-icon" style="color: var(--golden);">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM9 10H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/></svg>
+                        </div>
+                        <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Events Held</span>
+                    </div>
+                </div>
+
+                <!-- Featured Pets -->
+                <div class="section-header">
+                    <h2>Featured Pets</h2>
+                    <p class="section-subtitle">Looking for a forever home</p>
+                </div>
+                <div class="featured-pets-scroll">
+                    <!-- Filled by JS -->
+                </div>
+
+                <!-- Photo Gallery -->
+                <div class="section-header">
+                    <h2>What We Do</h2>
+                    <p class="section-subtitle">Check out our recent activities</p>
+                </div>
+                <div class="photo-gallery">
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity1.jpg" alt="Making blankets for shelter animals" loading="lazy">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity2.jpg" alt="Students working together" loading="lazy">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity3.jpg" alt="Community outreach event" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Upcoming Event Preview -->
+                <div class="section-header">
+                    <h2>Coming Up</h2>
+                    <p class="section-subtitle">Next volunteer opportunity</p>
+                </div>
+                <div class="upcoming-preview" id="upcomingPreview">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ADOPT ==================== -->
+        <section id="adopt" class="section">
+            <div class="section-hero adopt-hero">
+                <div class="section-hero-content">
+                    <h2>Find Your<br>New Best Friend</h2>
+                    <p>Every adoption saves a life</p>
+                </div>
+                <svg class="section-hero-icon" viewBox="0 0 24 24" fill="rgba(255,255,255,0.25)" width="80" height="80"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div class="container">
+                <!-- Search & Filter -->
+                <div class="adopt-controls">
+                    <div class="search-bar">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        <input type="text" id="searchInput" placeholder="Search by name or breed...">
+                    </div>
+                    <div class="filter-pills">
+                        <button class="filter-pill active" data-filter="all">All</button>
+                        <button class="filter-pill" data-filter="dog">Dogs</button>
+                        <button class="filter-pill" data-filter="cat">Cats</button>
+                    </div>
+                    <p class="results-count" id="resultsCount"></p>
+                </div>
+
+                <!-- Animal Grid -->
+                <div class="animal-grid" id="animalGrid">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== FOSTER ==================== -->
+        <section id="foster" class="section">
+            <div class="section-hero foster-hero">
+                <div class="section-hero-content">
+                    <h2>Open Your Home,<br>Save a Life</h2>
+                    <p>Temporary care with permanent impact</p>
+                </div>
+                <svg class="section-hero-icon" viewBox="0 0 24 24" fill="rgba(255,255,255,0.25)" width="80" height="80"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            </div>
+            <div class="container">
+                <!-- Why Foster -->
+                <div class="section-header">
+                    <h2>Why Foster?</h2>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-row fade-in">
+                        <div class="benefit-icon" style="background: var(--soft-pink);">
+                            <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Save Lives</h4>
+                            <p>Every foster home frees up shelter space for another animal in need.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row fade-in">
+                        <div class="benefit-icon" style="background: var(--sky-blue);">
+                            <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Home Environment</h4>
+                            <p>Animals thrive in a home setting, making them more adoptable.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row fade-in">
+                        <div class="benefit-icon" style="background: var(--golden);">
+                            <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>Trial Run</h4>
+                            <p>Not sure about adopting? Fostering lets you experience pet parenthood.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row fade-in">
+                        <div class="benefit-icon" style="background: var(--warm-orange);">
+                            <svg viewBox="0 0 24 24" fill="white" width="24" height="24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        </div>
+                        <div class="benefit-text">
+                            <h4>We Cover Costs</h4>
+                            <p>Food, supplies, and vet care are covered by the shelter.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="section-header">
+                    <h2>How It Works</h2>
+                </div>
+                <div class="steps-card fade-in">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Apply</h4>
+                            <p>Fill out a quick application form</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Get Matched</h4>
+                            <p>We'll pair you with the perfect pet</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Welcome Home</h4>
+                            <p>Pick up your foster and all supplies</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Love &amp; Care</h4>
+                            <p>Provide a warm, safe temporary home</p>
+                        </div>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Happy Ending</h4>
+                            <p>Help them find their forever family</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urgent Foster Needs -->
+                <div class="section-header">
+                    <h2>Urgent Foster Needs</h2>
+                    <p class="section-subtitle">These animals need homes now</p>
+                </div>
+                <div class="foster-needs-grid">
+                    <div class="foster-need-card fade-in">
+                        <div class="foster-need-header">
+                            <span class="foster-need-icon">&#128049;</span>
+                            <span class="foster-need-count">3</span>
+                        </div>
+                        <h4>Kittens</h4>
+                        <p>Bottle-feeding needed</p>
+                        <span class="urgent-badge">URGENT</span>
+                    </div>
+                    <div class="foster-need-card fade-in">
+                        <div class="foster-need-header">
+                            <span class="foster-need-icon">&#128054;</span>
+                            <span class="foster-need-count">2</span>
+                        </div>
+                        <h4>Senior Dogs</h4>
+                        <p>Calm home preferred</p>
+                        <span class="urgent-badge">URGENT</span>
+                    </div>
+                    <div class="foster-need-card fade-in">
+                        <div class="foster-need-header">
+                            <span class="foster-need-icon">&#9764;&#65039;</span>
+                            <span class="foster-need-count">1</span>
+                        </div>
+                        <h4>Post-Surgery</h4>
+                        <p>Recovery monitoring</p>
+                        <span class="urgent-badge">URGENT</span>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="section-header">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>How long is a typical foster?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Foster periods vary from 2 weeks to 3 months, depending on the animal's needs. We'll discuss the expected timeline when you're matched.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>What supplies do I need?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We provide everything: food, litter, crate, toys, and any medications. Just bring the love!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>What if I fall in love?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Foster fails are welcome! If you decide to adopt your foster, we'll waive the adoption fee as a thank-you.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item fade-in">
+                        <button class="faq-question">
+                            <span>I'm a student &mdash; can I still foster?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! With a parent/guardian's permission, students can be part of a foster family. It's a great way to learn responsibility.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apply CTA -->
+                <div class="cta-center">
+                    <p class="cta-text">Ready to make a difference?</p>
+                    <button class="btn btn-primary" onclick="openModal('fosterApply')">Apply to Foster</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== VOLUNTEER ==================== -->
+        <section id="volunteer" class="section">
+            <div class="section-hero volunteer-hero">
+                <div class="section-hero-content">
+                    <h2>Make a<br>Difference</h2>
+                    <p>Join our team of amazing volunteers</p>
+                </div>
+                <svg class="section-hero-icon" viewBox="0 0 24 24" fill="rgba(255,255,255,0.25)" width="80" height="80"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div class="container">
+                <!-- Category Filter -->
+                <div class="event-filter-pills" id="eventFilters">
+                    <button class="filter-pill active" data-category="all">All</button>
+                    <button class="filter-pill" data-category="shelterVisit">Shelter Visit</button>
+                    <button class="filter-pill" data-category="fundraiser">Fundraiser</button>
+                    <button class="filter-pill" data-category="crafting">Crafting</button>
+                    <button class="filter-pill" data-category="community">Community</button>
+                </div>
+
+                <!-- Events -->
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <p class="section-subtitle" id="eventCount"></p>
+                </div>
+                <div class="events-list" id="eventsList">
+                    <!-- Filled by JS -->
+                </div>
+
+                <!-- Past Events Gallery -->
+                <div class="section-header">
+                    <h2>Past Events</h2>
+                    <p class="section-subtitle">See what we've been up to</p>
+                </div>
+                <div class="photo-gallery">
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity1.jpg" alt="Making blankets" loading="lazy">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity2.jpg" alt="Group activity" loading="lazy">
+                    </div>
+                    <div class="gallery-item fade-in">
+                        <img src="images/activity3.jpg" alt="Community outreach" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DONATE ==================== -->
+        <section id="donate" class="section">
+            <div class="section-hero donate-hero">
+                <div class="section-hero-content">
+                    <h2>Every Dollar<br>Saves Lives</h2>
+                    <p>100% goes directly to helping animals</p>
+                </div>
+                <svg class="section-hero-icon" viewBox="0 0 24 24" fill="rgba(255,255,255,0.25)" width="80" height="80"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div class="container">
+                <!-- Amount Selection -->
+                <div class="section-header">
+                    <h2>Choose an Amount</h2>
+                </div>
+                <div class="donate-card fade-in">
+                    <div class="amount-grid">
+                        <button class="amount-btn" data-amount="5">$5</button>
+                        <button class="amount-btn active" data-amount="10">$10</button>
+                        <button class="amount-btn" data-amount="25">$25</button>
+                        <button class="amount-btn" data-amount="50">$50</button>
+                        <button class="amount-btn" data-amount="100">$100</button>
+                        <div class="custom-amount">
+                            <span class="dollar-sign">$</span>
+                            <input type="number" id="customAmount" placeholder="Custom">
+                        </div>
+                    </div>
+                    <button class="btn btn-donate" id="donateBtn">
+                        <svg viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        Donate Now
+                    </button>
+                </div>
+
+                <!-- Impact -->
+                <div class="section-header">
+                    <h2>Your Impact</h2>
+                    <p class="section-subtitle">See where your money goes</p>
+                </div>
+                <div class="impact-list">
+                    <div class="impact-row fade-in">
+                        <div class="impact-icon" style="background: var(--golden);">&#127860;</div>
+                        <div class="impact-text">
+                            <strong>$5</strong>
+                            <p>Feeds a shelter animal for a week</p>
+                        </div>
+                    </div>
+                    <div class="impact-row fade-in">
+                        <div class="impact-icon" style="background: var(--soft-pink);">&#129528;</div>
+                        <div class="impact-text">
+                            <strong>$10</strong>
+                            <p>Provides a cozy blanket and toys</p>
+                        </div>
+                    </div>
+                    <div class="impact-row fade-in">
+                        <div class="impact-icon" style="background: var(--sky-blue);">&#128137;</div>
+                        <div class="impact-text">
+                            <strong>$25</strong>
+                            <p>Covers one vaccination round</p>
+                        </div>
+                    </div>
+                    <div class="impact-row fade-in">
+                        <div class="impact-icon" style="background: var(--warm-orange);">&#9764;&#65039;</div>
+                        <div class="impact-text">
+                            <strong>$50</strong>
+                            <p>Sponsors a spay/neuter surgery</p>
+                        </div>
+                    </div>
+                    <div class="impact-row fade-in">
+                        <div class="impact-icon" style="background: #e74c3c;">&#9885;&#65039;</div>
+                        <div class="impact-text">
+                            <strong>$100</strong>
+                            <p>Funds an emergency medical rescue</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wish List -->
+                <div class="section-header">
+                    <h2>Wish List</h2>
+                    <p class="section-subtitle">Items our shelters need most</p>
+                </div>
+                <div class="wishlist-grid">
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#128054;</span>
+                            <span class="priority high">High</span>
+                        </div>
+                        <h4>Dog Food</h4>
+                    </div>
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#128049;</span>
+                            <span class="priority high">High</span>
+                        </div>
+                        <h4>Cat Litter</h4>
+                    </div>
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#128716;</span>
+                            <span class="priority medium">Medium</span>
+                        </div>
+                        <h4>Blankets</h4>
+                    </div>
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#10024;</span>
+                            <span class="priority medium">Medium</span>
+                        </div>
+                        <h4>Cleaning Supplies</h4>
+                    </div>
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#129528;</span>
+                            <span class="priority low">Low</span>
+                        </div>
+                        <h4>Toys</h4>
+                    </div>
+                    <div class="wishlist-item fade-in">
+                        <div class="wishlist-header">
+                            <span>&#128054;</span>
+                            <span class="priority low">Low</span>
+                        </div>
+                        <h4>Leashes</h4>
+                    </div>
+                </div>
+
+                <!-- Other Ways -->
+                <div class="section-header">
+                    <h2>Other Ways to Help</h2>
+                </div>
+                <div class="other-ways">
+                    <div class="other-way-card fade-in">
+                        <div class="other-way-icon" style="background: var(--golden);">&#128227;</div>
+                        <div class="other-way-text">
+                            <h4>Fundraise With Us</h4>
+                            <p>Start a peer-to-peer fundraiser for your birthday, school event, or just because!</p>
+                        </div>
+                    </div>
+                    <div class="other-way-card fade-in">
+                        <div class="other-way-icon" style="background: var(--sky-blue);">&#128244;</div>
+                        <div class="other-way-text">
+                            <h4>Share Our Mission</h4>
+                            <p>Follow us on social media and spread the word about The Pawsitive Project.</p>
+                        </div>
+                    </div>
+                    <div class="other-way-card fade-in">
+                        <div class="other-way-icon" style="background: var(--warm-orange);">&#127970;</div>
+                        <div class="other-way-text">
+                            <h4>Corporate Matching</h4>
+                            <p>Ask your parent's employer if they match charitable donations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo_small.jpg" alt="Pawsitive" class="footer-logo">
+                    <h3>The Pawsitive Project</h3>
+                    <p>A student-led organization dedicated to helping the animal shelter crisis.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#adopt">Adopt</a>
+                    <a href="#foster">Foster</a>
+                    <a href="#volunteer">Volunteer</a>
+                    <a href="#donate">Donate</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:pawsitiveproject@email.com">pawsitiveproject@email.com</a>
+                    <a href="#">@thepawsitiveproject</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Pawsitive Project. Made with &#10084;&#65039; by students, for animals.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animal Detail Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">&#10084;&#65039;</span>
+        <span class="toast-message" id="toastMessage"></span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
